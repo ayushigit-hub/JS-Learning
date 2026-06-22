@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- the document object represents/models the webpage --> 
+    
+    <title> DOM </title>
+</head>
+<body>
+    <button> Hello </button>
+
+      <!-- this querySelector will only get the first button from the page if we need another button aswell we will add class attribute to the button -->
+    <button class="jsButton"> New Button </button>
+   <script>
+    // this code removes everything on the page and replace it with hello
+     
+     /*document.body.innerHTML = 'hello'
+     document.title = 'good boyy'*/
+
+    //  Properties
+    /* console.log(document.title)
+    document.title = 'Changed'
+
+    console.log(document.body)
+    console.log(typeof document.body) //object
+
+    console.log(document.body.innerHTML)
+    document.body.innerHTML = 'Changed'
+    document.body.innerHTML = '<button>Good Boyy</button>'
+*/
+    // Methods (is a function saved inside an object)
+    
+     // document.querySelector()
+     // lets us get any element from the page and put it inside javascript
+   
+     console.log(document.querySelector('button'))
+     console.log(document.querySelector('body'))
+     console.log(document.querySelector('button').innerHTML)//it will gives us the html inside the button which is hello
+     document.querySelector('button').innerHTML = 'Changed'
+
+    //  console.log(document.querySelector('.jsButton'))
+    //  . is a class selector
+    const buttonElement = document.querySelector('.jsButton')
+    console.log(buttonElement)
+     
+   </script> 
+</body>
+</html>
