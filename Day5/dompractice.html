@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> DOM Practice </title>
+    </head>
+    <body>
+        <button> Button1 </button>
+        <button class = "js-button"> Button2 </button>
+
+        <script>
+            // document.body.innerHTML = 'Changed' body mai jitna hoga sb change
+            // document.title = 'title change' will only change the title of the webpage
+
+            // console.log(document.title)
+            // document.title = 'changed'
+
+            // console.log(document.body)
+            // document.body.innerHTML = '<b> changed </b>'
+            // document.body.innerText = '<b> DOUBLE CHANGE </b>'
+
+            // im getting thoda gist here
+
+            // console.log(document.querySelector('button'))
+            // console.log(document.querySelector('.js-button'))
+            
+            // isme kafi errors aai bcs upr i didnt comment so mza aaya now i get it
+
+            console.log(document.querySelector('button').innerHTML)
+            document.querySelector('button').innerHTML = 'Changed'
+            document.querySelector('.js-button').innerHTML = 'Changed2'
+
+            const buttonElement = document.querySelector('.js-button')
+            console.log(buttonElement)
+
+            // this isnt practice isme mai sb smjhi pr
+
+
+        </script>
+
+    
+    </body>
+</html>
