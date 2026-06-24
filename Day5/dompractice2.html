@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title> Practice 2 </title>
+    </head>
+    <body>
+        <button onclick = "Changed()" class = "js-changed-button"> Change Here </button>
+        <script> 
+            function Changed(){
+                const buttonElement = document.querySelector('.js-changed-button')
+
+                if (buttonElement.innerText === 'Change Here'){
+                    buttonElement.innerText = 'Changed Here'
+                } else {
+                    buttonElement.innerText = 'Change Here'
+                }
+            }
+        </script>
+    </body>
+</html>
