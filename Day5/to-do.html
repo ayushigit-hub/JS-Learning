@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> To-Do App hehe </title>
+</head>
+<body>
+    <h1> To-Do Tasks </h1>
+    <input placeholder = "Task Here" class="js-lenewala">
+    <button onclick = "addTask()"> Dalo Please </button>
+
+    <p class = "js-ketask"> </p>
+
+    <script>
+        // ek array lenge to store the tasks list
+        
+        let tasks = []
+
+        function addTask(){
+            const inputElement = document.querySelector('.js-lenewala')
+            const taskName = inputElement.value
+
+            tasks.push(taskName)
+
+            inputElement.value = ''
+
+            // task dikhane bhi toh padenge 
+            displayTask()
+        }
+
+        function displayTask(){
+
+            let task = ''
+
+            for(let i = 0; i<tasks.length; i++){
+                task = task + tasks[i]
+                task = task + '<button onclick="completedtask()"> hogya </button>' 
+                task = task + '<button onclick="deleteTask()"> bidieo delete </button>' + '<br>'
+            }
+
+            document.querySelector('.js-ketask').innerHTML = task
+        }
+
+        // ab khtm hogya h toh delete bhi krdete h
+
+        function deleteTask(jagah){
+            tasks.splice(jagah, 1)
+            displayTask()
+        }
+
+        function completedtask(jagah){
+            tasks[jagah] = ' done ' + tasks[jagah]
+            displayTask()
+        }
+        
+        
+    </script>
+      
+    
+</body>
+</html>
